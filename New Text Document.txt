@@ -1,0 +1,6 @@
+num = 1, sum = num, num = 2, sum+=num, num=sum, sum+=num
+
+12
+3
+
+String inststring = intVariable + "";
