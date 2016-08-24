@@ -6,17 +6,20 @@ import java.util.ArrayList;
 public class DoingIt {
     Window myWindow;
 
+    int[] myIntegerArray = {4, 3, 2, 1, 7};
+
     public void doIt(Window win){
         myWindow = win;
 
-        ex21();
+
+        //ex21();
         //ex22();
         //ex23();
         //ex31();
         //ex41();
         //ex42();
         //ex51();
-        //ex52();
+        ex52();
 
         //valueAndReference();
         //simpleArrays();
@@ -29,41 +32,136 @@ public class DoingIt {
     }
 
     //LAB EXERCISES for you to code
-    private void ex21(){
-    int[] myIntegerArray = {4, 3, 2, 1};
-int numberOfElems;
-        numberOfElems = myIntegerArray.length;
-    myWindow.clearOut();
+    private void ex21()
+    {
+
+        int numberOfElems = myIntegerArray.length;
+        myWindow.clearOut();
         myWindow.writeOutLine(numberOfElems);
-        myWindow.writeOutLine("The value at index 2 is: " + myIntegerArray[numberOfElems -1]);
+        myWindow.writeOutLine("The value at the last index is: " + myIntegerArray[numberOfElems -1]);
     }
 
-    private void ex22(){
+    private void ex22()
+    {
+        int[] a = myIntegerArray;
+        int product = 1;
+        for(int i = 0; i < a.length; i++)
+        {
+            product *= a[i];
+        }
+        myWindow.clearOut();
+        myWindow.writeOutLine("The product of the 'a' array is: " + product);
+    }
+
+    private void ex23()
+    {
+        boolean square;
+
+        myWindow.clearOut();
+
+        square = (Math.sqrt(myIntegerArray[0]) == myIntegerArray[2]);
+
+        myWindow.writeOutLine("Is element [2] the square root of element [0]? " + square);
+    }
+
+    private void ex31()
+    {
+        String[] myStringArray;
+
+        //myWindow.writeOutLine(myStringArray[0]);                //Compile Error
+
+        myStringArray = new String[3];
+        myStringArray[0] = "green";
+
+        //myStringArray[2] = myStringArray[2].toLowerCase();      //NullPointerException
+
+        myWindow.clearOut();
+        //myWindow.writeOutLine(myStringArray[3]);                //ArrayIndexOutOfBoundsException
+        myWindow.writeOutLine(myStringArray[0].length());
+    }
+
+    private void ex41()
+    {
+        ArrayList<String> myList = new ArrayList<>(100);
+        myWindow.clearOut();
+
+        myList.add("three");
+        myList.add("one");
+        myList.add(0, "four");
+        myList.add(2, "two");
+
+        myWindow.writeOutLine(myList);
+
+        myList.set(2, "seven");
+
+        myWindow.writeOutLine(myList);
+
+        myList.remove(0);
+
+        myWindow.writeOutLine(myList);
+
+        myList.add(myList.size() -1, "five");
+        myList.add(myList.size() -1, "five");
+        myList.add(myList.size() -1, "five");
+
+        myWindow.writeOutLine(myList);
+
+        myWindow.writeOutLine(myList.indexOf("seven"));
 
     }
 
-    private void ex23(){
+    private void ex42()
+    {
+        ArrayList<String> myList = new ArrayList<>(100);
+        myWindow.clearOut();
+
+        myList.add("three");
+        myList.add("one");
+        myList.add(0, "four");
+        myList.add(2, "two");
+
+        myWindow.writeOutLine(myList);
+
+        myList.set(2, "seven");
+
+        myWindow.writeOutLine(myList);
+
+        myList.remove(0);
+
+        myWindow.writeOutLine(myList);
+
+        myList.add(myList.size() -1, "five");
+        myList.add(myList.size() -1, "five");
+        myList.add(myList.size() -1, "five");
+
+        myWindow.writeOutLine(myList);
+
+        myWindow.writeOutLine(myList.indexOf("seven"));
+
+        boolean hasString = myList.contains("seven");       //.contains - Returns true if this list contains the specified element.
+
+        myWindow.writeOutLine(hasString);
+    }
+
+    private void ex51()
+    {
+
+        String camelCase = myWindow.readIn();
+
+        camelCase = camelCase.toLowerCase();
+
+        camelCase = camelCase.substring(0,1).toUpperCase() + camelCase.substring(1);
+
+        myWindow.clearOut();
+
+        myWindow.writeOutLine(camelCase);
 
     }
 
-    private void ex31(){
-
-    }
-
-    private void ex41(){
-
-    }
-
-    private void ex42(){
-
-    }
-
-    private void ex51(){
-
-    }
-
-    private void ex52(){
-
+    private void ex52()
+    {
+        myWindow.clearOut();
+        myWindow.writeOutLine(String.format("%4d\n%4d\n%4d\n%4d", 1, 10, 100, 1000));  //% is placeholder, d - passing decimal base integer, 4 - pad by 4 places
     }
 
     //WORKSHOP CODE for you to play with

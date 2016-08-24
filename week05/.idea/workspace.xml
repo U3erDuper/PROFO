@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9522c90-4960-4df1-964e-9c5a04580f27" name="Default" comment="" />
+    <list default="true" id="f9522c90-4960-4df1-964e-9c5a04580f27" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/week05/DoingIt.class" afterPath="$PROJECT_DIR$/out/production/week05/DoingIt.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DoingIt.java" afterPath="$PROJECT_DIR$/src/DoingIt.java" />
+    </list>
     <ignored path="week05.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,9 +29,14 @@
       <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Person.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
+            <state relative-caret-position="99">
               <caret line="3" column="16" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="19" />
-              <folding />
+              <folding>
+                <element signature="e#143#144#0" expanded="false" />
+                <element signature="e#170#171#0" expanded="false" />
+                <element signature="e#330#331#0" expanded="false" />
+                <element signature="e#356#357#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -34,27 +44,9 @@
       <file leaf-file-name="DoingIt.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DoingIt.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
-              <folding>
-                <element signature="docComment;class#DoingIt#0" expanded="false" />
-                <element signature="method#ex22#0;class#DoingIt#0" expanded="false" />
-                <element signature="method#ex23#0;class#DoingIt#0" expanded="false" />
-                <element signature="method#ex31#0;class#DoingIt#0" expanded="false" />
-                <element signature="method#ex41#0;class#DoingIt#0" expanded="false" />
-                <element signature="method#ex42#0;class#DoingIt#0" expanded="false" />
-                <element signature="method#ex51#0;class#DoingIt#0" expanded="false" />
-                <element signature="method#ex52#0;class#DoingIt#0" expanded="false" />
-                <element signature="method#valueAndReference#0;class#DoingIt#0" expanded="false" />
-                <element signature="method#simpleArrays#0;class#DoingIt#0" expanded="false" />
-                <element signature="method#declaringArraysAndUsingArrayElements#0;class#DoingIt#0" expanded="false" />
-                <element signature="e#3464#3525#0" expanded="false" />
-                <element signature="method#whenArraysContainReferenceTypes#0;class#DoingIt#0" expanded="false" />
-                <element signature="method#arrayListExample#0;class#DoingIt#0" expanded="false" />
-                <element signature="e#4740#4749#0" expanded="true" />
-                <element signature="method#strings#0;class#DoingIt#0" expanded="false" />
-                <element signature="method#stringClassExample#0;class#DoingIt#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="99">
+              <caret line="162" column="28" selection-start-line="162" selection-start-column="28" selection-end-line="162" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -72,7 +64,7 @@
       <file leaf-file-name="WindowDriver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WindowDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
+            <state relative-caret-position="33">
               <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -82,6 +74,9 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -102,7 +97,7 @@
     <option name="width" value="1938" />
     <option name="height" value="1048" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -127,8 +122,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -164,6 +157,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -196,53 +191,6 @@
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="GAPID_DISABLE_PCS" value="false" />
-      </Profilers>
-      <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="EXTRA_OPTIONS" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="DEBUGGER_TYPE" value="Java" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <Java />
-      <Profilers>
-        <option name="GAPID_DISABLE_PCS" value="false" />
-      </Profilers>
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -360,6 +308,18 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -455,26 +415,26 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33296338" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32381997" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23541667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17793368" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -501,9 +461,53 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Person.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="19" />
+          <folding>
+            <element signature="e#143#144#0" expanded="false" />
+            <element signature="e#170#171#0" expanded="false" />
+            <element signature="e#330#331#0" expanded="false" />
+            <element signature="e#356#357#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DoingIt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week05.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WindowDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="3" column="16" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="19" />
-          <folding />
+          <folding>
+            <element signature="e#143#144#0" expanded="false" />
+            <element signature="e#170#171#0" expanded="false" />
+            <element signature="e#330#331#0" expanded="false" />
+            <element signature="e#356#357#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -511,25 +515,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#DoingIt#0" expanded="false" />
-            <element signature="method#ex22#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#ex23#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#ex31#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#ex41#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#ex42#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#ex51#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#ex52#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#valueAndReference#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#simpleArrays#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#declaringArraysAndUsingArrayElements#0;class#DoingIt#0" expanded="false" />
-            <element signature="e#3464#3525#0" expanded="false" />
-            <element signature="method#whenArraysContainReferenceTypes#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#arrayListExample#0;class#DoingIt#0" expanded="false" />
-            <element signature="e#4740#4749#0" expanded="true" />
-            <element signature="method#strings#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#stringClassExample#0;class#DoingIt#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -547,7 +533,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="3" column="16" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="19" />
-          <folding />
+          <folding>
+            <element signature="e#143#144#0" expanded="false" />
+            <element signature="e#170#171#0" expanded="false" />
+            <element signature="e#330#331#0" expanded="false" />
+            <element signature="e#356#357#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -555,25 +546,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#DoingIt#0" expanded="false" />
-            <element signature="method#ex22#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#ex23#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#ex31#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#ex41#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#ex42#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#ex51#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#ex52#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#valueAndReference#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#simpleArrays#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#declaringArraysAndUsingArrayElements#0;class#DoingIt#0" expanded="false" />
-            <element signature="e#3464#3525#0" expanded="false" />
-            <element signature="method#whenArraysContainReferenceTypes#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#arrayListExample#0;class#DoingIt#0" expanded="false" />
-            <element signature="e#4740#4749#0" expanded="true" />
-            <element signature="method#strings#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#stringClassExample#0;class#DoingIt#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -597,15 +570,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="99">
           <caret line="3" column="16" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="19" />
-          <folding />
+          <folding>
+            <element signature="e#143#144#0" expanded="false" />
+            <element signature="e#170#171#0" expanded="false" />
+            <element signature="e#330#331#0" expanded="false" />
+            <element signature="e#356#357#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WindowDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
+        <state relative-caret-position="33">
           <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -623,27 +601,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DoingIt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
-          <folding>
-            <element signature="docComment;class#DoingIt#0" expanded="false" />
-            <element signature="method#ex22#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#ex23#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#ex31#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#ex41#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#ex42#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#ex51#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#ex52#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#valueAndReference#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#simpleArrays#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#declaringArraysAndUsingArrayElements#0;class#DoingIt#0" expanded="false" />
-            <element signature="e#3464#3525#0" expanded="false" />
-            <element signature="method#whenArraysContainReferenceTypes#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#arrayListExample#0;class#DoingIt#0" expanded="false" />
-            <element signature="e#4740#4749#0" expanded="true" />
-            <element signature="method#strings#0;class#DoingIt#0" expanded="false" />
-            <element signature="method#stringClassExample#0;class#DoingIt#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="99">
+          <caret line="162" column="28" selection-start-line="162" selection-start-column="28" selection-end-line="162" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
