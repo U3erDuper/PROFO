@@ -18,8 +18,8 @@ public class DoingIt {
         //ex31();
         //ex41();
         //ex42();
-        //ex51();
-        ex52();
+        ex51();
+        //ex52();
 
         //valueAndReference();
         //simpleArrays();
