@@ -126,7 +126,7 @@ public class TDraw {
                 message += "bad direction: " + direction + " ";
             }
         }
-
+//
             if (isNumeric(distance)) {
                 distanceAsDouble = Double.parseDouble(distance);
             } else {
