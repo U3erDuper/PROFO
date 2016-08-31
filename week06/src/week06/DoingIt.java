@@ -19,16 +19,198 @@ public class DoingIt {
         //codeForVideos2();
 
         //ifTrapEx11();
+        //nestedIfTrapsUpToYou();
+        //somethingSensibleSwap();
+        //fourOutcomes();
+        //ifElseTestCases();
+        //multiWayIfElseTestCases();
+        //fixedGradeSelection();
+        fixDangleElse();
         //I'm leaving you to code and organise your Lab Exercise methods from now on
 
     }
 
     //LAB EXERCISES for you to code ===========================================
 
-    private void ifTrapEx11(){
+    private void ifTrapEx11()
+    {
+
+        int temperature;
+
+        //temperature = 20;   // both if… conditions are true
+        //temperature = 16;   //only the first is true
+        //temperature = 19;   //only the second is true
+        temperature = 17;   //neither are true
+
+        myWindow.clearOut();
+
+        if (temperature % 2 == 0)
+            myWindow.writeOutLine(temperature + " is an even number");
+
+        if (temperature >= 18)
+            myWindow.writeOutLine(temperature + " is equal to or greater than 18");
+
 
     }
 
+    private void nestedIfTrapsUpToYou()
+    {
+
+        int temperature;
+
+        //temperature = 20;   // both if… conditions are true
+        //temperature = 16;   //only the first is true
+        temperature = 19;   //only the second is true
+        //temperature = 17;   //neither are true
+
+        myWindow.clearOut();
+
+        if (temperature % 2 == 0) {
+            myWindow.writeOutLine(temperature + " is an even number");
+            if (temperature >= 18)
+                myWindow.writeOutLine(temperature + " is equal to or greater than 18");
+        }
+
+    }
+
+    private void somethingSensibleSwap()
+    {
+
+        int temperature;
+
+        //temperature = 20;   // both if… conditions are true
+        //temperature = 16;   //only the first is true
+        temperature = 19;   //only the second is true
+        //temperature = 17;   //neither are true
+
+        myWindow.clearOut();
+
+        if (temperature >= 18) {
+            myWindow.writeOutLine(temperature + " is equal to or greater than 18");
+            if (temperature % 2 == 0)
+                myWindow.writeOutLine(temperature + " is an even number");
+
+        }
+
+    }
+
+    private void fourOutcomes(){
+
+        boolean notTurning = true;
+
+        myWindow.clearOut();
+
+        if (!notTurning)
+            myWindow.writeOutLine("1. Indicate");
+            myWindow.writeOutLine("1. Turn");
+
+        if (!notTurning)
+            myWindow.writeOutLine("2. Indicate");
+        myWindow.writeOutLine("2. Turn");
+
+        if (!notTurning){
+            myWindow.writeOutLine("3. Indicate");
+            myWindow.writeOutLine("3. Turn");
+        };
+
+        if (!notTurning){
+            myWindow.writeOutLine("4. Indicate");
+            myWindow.writeOutLine("4. Turn");
+        }
+
+    }
+
+    private void ifElseTestCases(){
+
+    String gender = myWindow.readIn();
+
+        gender = gender.toLowerCase();
+
+        myWindow.clearOut();
+
+        if (gender.equals("f"))
+            myWindow.writeOutLine("female");
+        else
+            myWindow.writeOutLine("male");
+
+
+    }
+
+    private void multiWayIfElseTestCases(){
+
+        String gender = myWindow.readIn();
+
+        gender = gender.toLowerCase().trim();
+
+        myWindow.clearOut();
+
+        if (gender.equals("f"))
+            myWindow.writeOutLine("female");
+        else if (gender.equals("m"))
+            myWindow.writeOutLine("male");
+        else if (gender.equals(""))
+            myWindow.writeOutLine("not available");
+        else
+            myWindow.writeOutLine("ERROR");
+
+    }
+
+    private void fixedGradeSelection(){
+
+
+        int mark = Integer.parseInt(myWindow.readIn());
+        String grade = "";
+
+        if (mark > 100 || mark < 0)
+            grade = "invalid";
+        else if (mark >= 80)
+            grade = "HD";
+        else if (mark >= 70)
+            grade = "D";
+        else if (mark >= 60)
+            grade = "C";
+        else if (mark >= 50)
+            grade = "P";
+        else if (mark >= 0)
+            grade = "N";
+        //else
+            //grade = "Error";
+
+
+        myWindow.clearOut();
+        myWindow.writeOutLine(grade);
+    }
+
+    private void fixDangleElse()
+    {
+        int temperature;
+
+        temperature = 5;   // both if… conditions are true
+        //temperature = 16;   //only the first is true
+        //temperature = 19;   //only the second is true
+        //temperature = 17;   //neither are true
+
+        myWindow.clearOut();
+
+
+        /*
+        Testing table:
+        input   expected    actual      okay
+        5       5 is odd    -           n
+        6       6 is even   6 is odd    n
+        18      18 is even  18 is even  y
+        19      19 is odd   -           n
+
+         */
+
+        if (temperature % 2 == 0) {
+            if (temperature >= 18)
+                myWindow.writeOutLine(temperature + " is even and is equal to or greater than 18");
+        }
+        else
+            myWindow.writeOutLine(temperature + " is an odd number");
+
+    }
     //I'm leaving you to code and organise your Lab Exercise methods from now on
 
 
@@ -38,9 +220,10 @@ public class DoingIt {
         int temperature = (int) Math.random() * 100;
         String clothesList = "";
 
-        if (temperature < 18){
+        if(temperature < 18){
             clothesList = clothesList + " " + "coat";
         }
+
 
         // or since the statement block contains one and only one statement
         // we may dispense with the braces.
