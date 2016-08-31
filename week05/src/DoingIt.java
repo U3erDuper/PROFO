@@ -19,7 +19,7 @@ public class DoingIt {
         //ex41();
         //ex42();
         //ex51();
-        ex52();
+        //ex52();
 
         //valueAndReference();
         //simpleArrays();
