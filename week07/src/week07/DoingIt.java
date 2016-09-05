@@ -7,28 +7,158 @@ public class DoingIt {
     Window myWindow;
 
     //class level variables here
+    int randRange(int min, int max)
+    {
+        int range = (max - min) + 1;
+        return (int)(Math.random() * range) + min;
+    }
 
     public void doIt(Window win){
         myWindow = win;
+
 
         //whileForPaste01();
         //whileForPaste02();
         //whileForPaste03();
         //whileForPaste04();
 
-        forForPaste01();
+        //forForPaste01();
         //enhancedForForPaste01();
         //videoWhileLoopInfiniteLoop01();
 
         //I'm leaving you to code and organise your Lab Exercise methods from now on
-        labExn();
+
+        //dicRolls();
+        //sumElems();
+        //avgElems();
+        //sentinelLoop();
+        dikeRolls();
+
     }
 
     //LAB EXERCISES for you to code ===========================================
 
-    private void labExn(){
+
+
+    private void dicRolls(){
+
+        myWindow.clearOut();
+
+        int die1 = 0, die2 = 1, count = 0;
+
+        while(die1 != die2){
+            die1 = randRange(1, 6);
+            die2 = randRange(1, 6);
+            myWindow.writeOutLine(die1 + ", " + die2);
+            count++;
+        }
+
+        myWindow.writeOutLine("It took " + count + " tries to roll a double.");
 
     }
+
+    private void sumElems(){
+
+        int[] myArray = {1,2,4,67,4,3,6};
+
+        int i = 0, sum = 0;
+
+        while (i < myArray.length){
+            sum += myArray[i];
+            i++;
+        }
+
+        myWindow.clearOut();
+        myWindow.writeOutLine("The total of myArray is " + sum);
+
+    }
+
+    private void avgElems(){
+
+        //int[] myArray = {};
+        int[] myArray = {1,2,4,67,4,3,6};
+        int i = 0, avg = 0;
+        myWindow.clearOut();
+
+        if (myArray.length > 0) {
+            while (i < myArray.length) {
+                avg += myArray[i];
+                i++;
+            }
+            myWindow.writeOutLine("The average of myArray is " + (avg / myArray.length));
+        }
+        else {
+            myWindow.writeOutLine("There are no values in the array, mate...");
+        }
+    }
+
+    private void sentinelLoop(){
+
+        int total = 0;
+        int count = 0;
+        String[] input = {};
+        //String[] input = {"1","2","4","67","four","three","done","seven","6"};
+        myWindow.clearOut();
+
+        if (input.length > 0) {
+            while (!input[count].equals("done")) {
+                if (isNumeric(input[count])) {
+                    total += Integer.parseInt(input[count]);
+                }
+                count++;
+            }
+            myWindow.writeOutLine("The total when done is " + total);
+        }
+        else {
+            myWindow.writeOutLine("No values in array, BIATCH!!");
+        }
+    }
+
+    private void dikeRolls() {
+
+        myWindow.clearOut();
+
+        int die1 = 0, die2 = 1;
+        double rolls = 1, match = 0, percentage = 0;
+
+        while (rolls < 1000000) {
+            while (die1 != die2) {
+                die1 = randRange(1, 6);
+                die2 = randRange(1, 6);
+                myWindow.writeOutLine(die1 + ", " + die2);
+                rolls++;
+            }
+            match++;
+            die1 = 0;
+            die2 = 1;
+        }
+        percentage = (match/rolls)*100;
+        myWindow.writeOutLine("After 1000000 rolls, there's a " + String.format("%.2f", percentage)  + "% probability of getting a match.");
+    }
+        /*myWindow.clearOut();
+        int[] matched = new int[1000000000];
+        int die1 = 0, die2 = 1, count = 0;
+        double avg = 0;
+
+        for(int i = 0; i < 1000000000; i++) {
+            while (die1 != die2) {
+                die1 = randRange(1, 6);
+                die2 = randRange(1, 6);
+                //myWindow.writeOutLine(die1 + ", " + die2);
+                count++;
+            }
+            matched[i] = count;
+            die1 = 0;
+            die2 = 1;
+            count = 0;
+        }
+        for(int abracadabra : matched) {
+            avg += abracadabra;
+        }
+            myWindow.writeOutLine("The average number of rolls to find a match in a billion tries is " + avg);
+*/
+
+
 
     //I'm leaving you to code and organise your Lab Exercise methods from now on
 
