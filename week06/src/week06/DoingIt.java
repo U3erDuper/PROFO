@@ -21,11 +21,11 @@ public class DoingIt {
         //ifTrapEx11();
         //nestedIfTrapsUpToYou();
         //somethingSensibleSwap();
-        //fourOutcomes();
+        fourOutcomes();
         //ifElseTestCases();
         //multiWayIfElseTestCases();
         //fixedGradeSelection();
-        fixDangleElse();
+        //fixDangleElse();
         //I'm leaving you to code and organise your Lab Exercise methods from now on
 
     }
@@ -113,7 +113,7 @@ public class DoingIt {
             myWindow.writeOutLine("3. Turn");
         };
 
-        if (!notTurning){
+        if (!notTurning);{
             myWindow.writeOutLine("4. Indicate");
             myWindow.writeOutLine("4. Turn");
         }
@@ -145,7 +145,7 @@ public class DoingIt {
         myWindow.clearOut();
 
         if (gender.equals("f"))
-            myWindow.writeOutLine("female");
+        myWindow.writeOutLine("female");
         else if (gender.equals("m"))
             myWindow.writeOutLine("male");
         else if (gender.equals(""))
@@ -200,7 +200,6 @@ public class DoingIt {
         6       6 is even   6 is odd    n
         18      18 is even  18 is even  y
         19      19 is odd   -           n
-
          */
 
         if (temperature % 2 == 0) {
