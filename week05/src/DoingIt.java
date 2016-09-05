@@ -10,9 +10,24 @@ public class DoingIt {
 
     public void doIt(Window win){
         myWindow = win;
+/*int number = 0;
+        for (int i = 2; i <=1502; i++){
+            if (i % 3 == 0 || i % 7 == 0){
+                number = i + 1;
+            }
+        }
+        */
+int a = 0;
+        int[] v = {1,2,3,4,5,6};
+        int largestFound = v[0];
+        for (int i = 1; i < v.length; i++)
+            if (v[i] > largestFound)
+                largestFound = v[i];
+            System.out.println(largestFound);
 
+        a = largestFound;
 
-        //ex21();
+        ex21();
         //ex22();
         //ex23();
         //ex31();
@@ -34,6 +49,14 @@ public class DoingIt {
     //LAB EXERCISES for you to code
     private void ex21()
     {
+int a = 0;
+        int[] v = {1,2,3,4,5,6};
+        int largestFound = v[0];
+        for (int i = 1; i < v.length; i++)
+            if (v[i] > largestFound)
+                largestFound = v[i];
+
+        a = largestFound;
 
         int numberOfElems = myIntegerArray.length;
         myWindow.clearOut();
