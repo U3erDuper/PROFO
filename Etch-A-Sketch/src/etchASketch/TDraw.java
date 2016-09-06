@@ -151,6 +151,7 @@ public class TDraw {
                 message += "Out of bounds";
         }
 
+
         out.setText(message);
     }
 

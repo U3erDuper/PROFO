@@ -18,10 +18,10 @@ public class DoingIt {
         //codeForVideos1();
         //codeForVideos2();
 
-        //ifTrapEx11();
+        ifTrapEx11();
         //nestedIfTrapsUpToYou();
         //somethingSensibleSwap();
-        fourOutcomes();
+        //fourOutcomes();
         //ifElseTestCases();
         //multiWayIfElseTestCases();
         //fixedGradeSelection();
@@ -29,6 +29,7 @@ public class DoingIt {
         //I'm leaving you to code and organise your Lab Exercise methods from now on
 
     }
+
 
     //LAB EXERCISES for you to code ===========================================
 
@@ -50,7 +51,26 @@ public class DoingIt {
         if (temperature >= 18)
             myWindow.writeOutLine(temperature + " is equal to or greater than 18");
 
+        for (int i = 1; i <= 100; i++) {
 
+            if (i % 3 == 0 && i % 7 == 0) {
+
+                myWindow.writeOutLine("foobar");
+
+            }
+            else if (i % 3 == 0) {
+
+                myWindow.writeOutLine("foo");
+            }
+            else if (i % 7 == 0) {
+
+                myWindow.writeOutLine("bar");
+            }
+            else {
+                myWindow.writeOutLine(i);
+            }
+
+        }
     }
 
     private void nestedIfTrapsUpToYou()
