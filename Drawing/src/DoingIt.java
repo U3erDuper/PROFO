@@ -8,17 +8,89 @@ public class DoingIt {
     public void drawIt(){
         //origin is bottom left hand corner, canvas is 1.0 X 1.0
 
-        //yourDrawing(); //your drawing code in this method
-        lotsOfCircles();
+        yourDrawingHeadacheInducer(); //your drawing code in this method
+        //lotsOfCircles();
         //lotsOfLines(1); //0 random, 1 vertical, 2 horizontal
         //circlesInCircles1(4); //number of circles across and down
         //circlesInCircles2();
         //drunkardsWalk(10); //delay time in milliseconds
         //interaction();
     }
-    private void yourDrawing(){
+    private void yourDrawingHeadacheInducer(){
         //your drawing code here
+
+        int N = 10, circles = 10;
+        double[] rx = new double[N];
+        double[] ry = new double[N];
+        double[] vx = new double[N];
+        double[] vy = new double[N];
+        double dt = 0.5;
+        double mass = 0.75;
+        double drag = 0.014;     // try changing this to 0.1 or 0.01 or even 0...
+        double attractionStrength = 0.01;
+        Color c;
+
+        // initialize the drawing area
+        StdDraw.clear(Color.black);
+        StdDraw.setPenColor(StdDraw.BLUE);
+
+        // do the animation
+        while (true) {
+            // if the mouse is pressed add some random velocity to all the particles
+            if (StdDraw.mousePressed()) {
+                for (int i = 0; i < N; i++) {
+                    vx[i] = .2 * Math.random() - .1;
+                    vy[i] = .2 * Math.random() - .1;
+                    c = Spectrum.getSpectrumColourFromScaledValue(1 + Math.floor(Math.random() * 200), 200);
+                    c = new Color((float) (c.getRed() / 255.0), (float) (c.getGreen() / 255.0), (float) (c.getBlue() / 255.0), 0.6F);
+                    StdDraw.setPenColor(c);
+                    N = (int) (Math.random()*(7+1)) +3;
+                    //System.out.println(N);
+                }
+            }
+
+            // clear all the forces
+            double[] fx = new double[N];
+            double[] fy = new double[N];
+
+            // add attraction forces for attraction to the mouse
+            for (int i = 0; i < N; i++) {
+                double dx = StdDraw.mouseX() - rx[i];
+                double dy = StdDraw.mouseY() - ry[i];
+                fx[i] += attractionStrength * dx;
+                fy[i] += attractionStrength * dy;
+            }
+
+            // add drag forces to all particles
+            // drag is proportional to velocity in the opposite direction
+            for (int i = 0; i < N; i++) {
+                fx[i] += -drag * vx[i];
+                fy[i] += -drag * vy[i];
+            }
+
+            // update positions
+            // euler step
+            for (int i = 0; i < N; i++) {
+                vx[i] += fx[i] * dt / mass;
+                vy[i] += fy[i] * dt / mass;
+                rx[i] += vx[i] * dt;
+                ry[i] += vy[i] * dt;
+            }
+
+            Color[] colours = {Color.black,Color.white,Color.red,Color.black,Color.yellow,Color.blue,Color.pink,
+                    Color.magenta,Color.black,Color.green,Color.orange,Color.black,Color.cyan,Color.gray};
+            StdDraw.clear(colours[(int)(Math.random()*colours.length)]);
+
+            // draw a filled circle for each particle
+            for (int i = 0; i < N; i++) {
+                double size = (Math.random()* 0.21) + 0.004;
+                StdDraw.filledCircle(rx[i], ry[i], size);
+            }
+
+            StdDraw.show(19);
+        }
     }
+
 
     private void lotsOfCircles(){
         final int FRAME_TIME = 50; //milliseconds
@@ -214,17 +286,19 @@ public class DoingIt {
          *  Credits:  Jeff Traer-Bernstein
          *
          ******************************************************************************/
-        int N = 10;
+        int N = 10, circles = 10;
         double[] rx = new double[N];
         double[] ry = new double[N];
         double[] vx = new double[N];
         double[] vy = new double[N];
         double dt = 0.5;
-        double mass = 1.0;
-        double drag = 0.05;     // try changing this to 0.1 or 0.01 or even 0...
+        double mass = 0.75;
+        double drag = 0.014;     // try changing this to 0.1 or 0.01 or even 0...
         double attractionStrength = 0.01;
+        Color c;
 
         // initialize the drawing area
+        StdDraw.clear(Color.black);
         StdDraw.setPenColor(StdDraw.BLUE);
 
         // do the animation
@@ -234,6 +308,11 @@ public class DoingIt {
                 for (int i = 0; i < N; i++) {
                     vx[i] = .2 * Math.random() - .1;
                     vy[i] = .2 * Math.random() - .1;
+                    c = Spectrum.getSpectrumColourFromScaledValue(1 + Math.floor(Math.random() * 200), 200);
+                    c = new Color((float) (c.getRed() / 255.0), (float) (c.getGreen() / 255.0), (float) (c.getBlue() / 255.0), 0.6F);
+                    StdDraw.setPenColor(c);
+                    N = (int) (Math.random()*(7+1)) +3;
+                    //System.out.println(N);
                 }
             }
 
@@ -265,15 +344,17 @@ public class DoingIt {
                 ry[i] += vy[i] * dt;
             }
 
-
-            StdDraw.clear();
+            Color[] colours = {Color.black,Color.white,Color.red,Color.black,Color.yellow,Color.blue,Color.pink,
+                    Color.magenta,Color.black,Color.green,Color.orange,Color.black,Color.cyan,Color.gray};
+            StdDraw.clear(colours[(int)(Math.random()*colours.length)]);
 
             // draw a filled circle for each particle
             for (int i = 0; i < N; i++) {
-                StdDraw.filledCircle(rx[i], ry[i], .01);
+                double size = (Math.random()* 0.21) + 0.004;
+                StdDraw.filledCircle(rx[i], ry[i], size);
             }
 
-            StdDraw.show(10);
+            StdDraw.show(19);
         }
     }
 
